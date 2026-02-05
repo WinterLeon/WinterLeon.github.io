@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitæ"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,55 +10,36 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+---
+*Sept. 2023*
+: **Master in mathematics (research focus)**, Université catholique de Louvain.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+*June 2021*
+: **Bachelor in mathematics**, Université catholique de Louvain.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Teaching experience
+---
+*For information on the classes, see [Teaching]({% link _pages/teaching.md %}).*
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+{% for post in site.teaching reversed %}
+*{{ post.period }}*
+: **{{ post.title }}**
+: Exercise sessions for {{ post.students }} students at {{ post.venue }}, in {{ post.language }}.
+{% endfor %}
+---
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Publications & Preprints
+---
+{% for post in site.publications reversed %}
+*{{ post.year }}*
+: **{{ post.title }}**, {{ post.authors }}, {{ post.year}}{% if post.doi and post.arxivurl %}
+: <span style="font-size: 0.8em;"><a href=" https://doi.org/{{ post.doi }} ">doi:{{ post.doi }}</a> - <a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
+{% elsif post.arxivurl %}
+: <span style="font-size: 0.8em;"><a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
+{% endif %}
+{% endfor %}
   
 Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+---
+Under construction, sorry.
   
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
