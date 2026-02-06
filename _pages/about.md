@@ -18,7 +18,7 @@ My work is on [Sobolev mappings between manifolds](https://en.wikipedia.org/wiki
 You might have met me at one of the following gatherings:
 
 * **Journées d'Analyse Géométrique 2026**, Roscoff (France), January 2026
-* **Geometric Analysis and PDEs 2025**, Cechiny (Poland), June 2025
+* **Geometric Analysis and PDEs 2025**, Checiny (Poland), June 2025
 * **Function spaces and applications XIII**, Paseky (Czech republic), June 2025
 * **Journées Parisiennes d'Analyse Géométrique**, Champs-sur-Marne (France), January 2025
 * **Geometric Analysis and PDEs 2024**, Bedlewo (Poland), July 2024

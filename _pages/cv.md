@@ -13,9 +13,12 @@ Education
 ---
 *Sept. 2023*
 : **Master in mathematics (research focus)**, Université catholique de Louvain.
+: Thesis: *Traces and extensions of non abelian gauge covariant Sobolev spaces*, supervised by J. Van Schaftingen.
+: Abroad studies at **Tohoku University** (Japan), completing the COLABS program under supervision of Fu. Nakano. 
 
 *June 2021*
 : **Bachelor in mathematics**, Université catholique de Louvain.
+: Thesis: *La fonction Gamma d'Euler et la fonction zêta de Riemann : Construction et propriété*, supervised by T. Cleays.
 
 Teaching experience
 ---
