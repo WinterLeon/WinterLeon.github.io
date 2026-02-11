@@ -20,15 +20,6 @@ Education
 : **Bachelor in mathematics**, Université catholique de Louvain.
 : Thesis: *La fonction Gamma d'Euler et la fonction zêta de Riemann : Construction et propriété*, supervised by T. Cleays.
 
-Teaching experience
----
-*For information on the classes, see [Teaching]({% link _pages/teaching.md %}).*
-
-{% for post in site.teaching reversed %}
-*{{ post.period }}*
-: **{{ post.title }}**
-: Exercise sessions for {{ post.students }} students at {{ post.venue }}, in {{ post.language }}.
-{% endfor %}
 ---
 
 Publications & Preprints
@@ -41,8 +32,28 @@ Publications & Preprints
 : <span style="font-size: 0.8em;"><a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
 {% endif %}
 {% endfor %}
-  
+---
+
 Talks
 ---
-Under construction, sorry.
-  
+*See also [Talks]({% link _pages/talks.md %}).*
+
+{% for post in site.talks reversed %}
+
+*{{ post.date | default: "1900-01-01" | date: "%B %Y" }} ({{ post.location }})*
+: **{{ post.title }}**
+: {{ post.venue }}
+{% endfor %}
+---
+
+Teaching experience
+---
+*See also [Teaching]({% link _pages/teaching.md %}).*
+
+{% for post in site.teaching reversed %}
+*{{ post.period }}*
+: **{{ post.title }}**
+: Exercise sessions for {{ post.students }} students at {{ post.venue }}, in {{ post.language }}.
+{% endfor %}
+---
+

@@ -11,4 +11,14 @@ author_profile: true
 
 {% endif %}
 
-<p> This page is still under construction, sorry.</p>
+{% include base_path %}
+
+{% for post in site.talks reversed %}
+
+**{{ post.title }}**
+: {{ post.venue }}
+: {{ post.date | default: "1900-01-01" | date: "%B %Y" }} ({{ post.location }})
+
+{{ post.excerpt }}
+---
+{% endfor %}
