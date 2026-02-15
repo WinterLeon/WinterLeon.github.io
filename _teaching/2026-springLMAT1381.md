@@ -1,7 +1,7 @@
 ---
 title: "LMAT1381: Personal project and seminar"
 collection: teaching
-type: "Bachelor thesis"
+type: "Bachelor's thesis"
 permalink: #/teaching/2014-spring-teaching-1
 venue: "UCLouvain"
 students: "3rd year mathematics student"

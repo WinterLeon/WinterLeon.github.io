@@ -1,7 +1,7 @@
 ---
 title: "LMAT2420: Complex analysis 2"
 collection: teaching
-type: "Undergraduate course"
+type: "Graduate course"
 permalink: #/teaching/2014-spring-teaching-1
 venue: "UCLouvain"
 students: "master in mathematics"
