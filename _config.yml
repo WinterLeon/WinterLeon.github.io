@@ -187,6 +187,8 @@ exclude:
   - README
   - tmp
   - vendor
+  - markdown_generator
+  - wsl
 keep_files:
   - .git
   - .svn
