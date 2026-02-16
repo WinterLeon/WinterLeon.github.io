@@ -188,7 +188,9 @@ exclude:
   - tmp
   - vendor
   - markdown_generator
+  - talkmap
   - wsl
+  - googleeb43110277bf63d5.html
 keep_files:
   - .git
   - .svn
