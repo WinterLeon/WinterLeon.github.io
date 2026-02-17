@@ -22,3 +22,12 @@ author_profile: true
 {{ post.excerpt }}
 ---
 {% endfor %}
+
+# Scientific gatherings I attended
+
+{% for post in site.conferences reversed %}
+ **{{ post.title }}**
+: {{ post.date | default: "1900-01-01" | date: "%B %Y" }}, {% if post.type != 'conference' %} {{ post.type }}, {% endif %}{{ post.venue }} ({{ post.country }})
+
+---
+{% endfor %}

@@ -160,6 +160,7 @@ include:
   - .htaccess
   - _pages
   - files
+  - _conferences
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -232,7 +233,8 @@ collections:
   talks:
     output: false
     permalink: /:collection/:path/
-
+  conferences:
+    output: false
 
 # These settings control how pages and collections are included in the site
 defaults:
