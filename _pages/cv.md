@@ -14,7 +14,7 @@ Education
 *Sept. 2023*
 : **Master in mathematics (research focus)**, Université catholique de Louvain.
 : Thesis: *Traces and extensions of non abelian gauge covariant Sobolev spaces*, supervised by J. Van Schaftingen.
-: Abroad studies at **Tohoku University** (Japan), completing the COLABS program under supervision of Fu. Nakano. 
+: Fall 2022: Abroad studies at **Tohoku University** (Japan), completing the COLABS program under supervision of Fu. Nakano. 
 
 *June 2021*
 : **Bachelor in mathematics**, Université catholique de Louvain.
@@ -53,7 +53,11 @@ Teaching experience
 {% for post in site.teaching reversed %}
 *{{ post.period }}*
 : **{{ post.title }}**
-: Exercise sessions for {{ post.students }} students at {{ post.venue }}, in {{ post.language }}.
+: {% if post.type == "Bachelor's thesis" %}
+  Bachelor's thesis supervision.
+  {% else %}
+  Exercise sessions for {{ post.students }} students at {{ post.venue }}, in {{ post.language }}.
+  {% endif %}
 {% endfor %}
 ---
 
