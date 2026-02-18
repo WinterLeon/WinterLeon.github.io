@@ -26,12 +26,16 @@ Publications & Preprints
 ---
 {% for post in site.publications reversed %}
 *{{ post.year }}*
-: **{{ post.title }}**, {{ post.authors }}, {{ post.year}}{% if post.doi and post.arxivurl %}
-: <span style="font-size: 0.8em;"><a href=" https://doi.org/{{ post.doi }} ">doi:{{ post.doi }}</a> - <a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
+: **{{ post.title }}**, {% if post.category == 'manuscripts' %} *{{ post.venue }}*, {% elsif post.category == 'submitted' %} {{ post.category }}, {% endif %}{{ post.authors }}, {{ post.year }}
+: {% if post.doi and post.arxivurl %}
+<span style="font-size: 0.8em;"><a href=" https://doi.org/{{ post.doi }} ">doi:{{ post.doi }}</a> - <a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
 {% elsif post.arxivurl %}
-: <span style="font-size: 0.8em;"><a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
+<span style="font-size: 0.8em;"><a href=" https://arxiv.org/abs/{{ post.arxivurl }} ">arXiv:{{ post.arxivurl }}</a></span>
+{% else %}
+<span style="font-size: 0.8em;">Unavailable</span>
 {% endif %}
 {% endfor %}
+
 ---
 
 Talks
